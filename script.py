@@ -8,10 +8,9 @@ import random
 # read this with a readmemh command.        #
 #############################################
 
-def randGen (filepath, addr_bits, num_bytes):
-    fh = open(filepath, "w")
-    lines = 2 ** addr_bits
-    for line in range(lines):
+def randGen (filepath, entries, num_bytes):
+    fh = open(filepath, "w";
+    for line in range(entries):
         print_str = ""
         for bytes in range(num_bytes):
             print_str += hex(random.randrange(0, 16))[2:]
